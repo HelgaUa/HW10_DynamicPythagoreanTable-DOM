@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Text color changed on click</title>
+</head>
+<body>
+<button id = js--change_text_color>Change color</button>
+<p class = js--main-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+    Sed vehicula tortor non odio rhoncus, eget molestie augue commodo.<br>
+    Praesent ex risus, pulvinar ac ornare non, malesuada nec massa.<br>
+    In hac habitasse platea dictumst. Etiam feugiat vel erat nec sodales.<br>
+    Aliquam condimentum metus vel elit faucibus facilisis.</p>
+<script>
+    const button = document.getElementById('js--change_text_color');
+    const text = document.querySelector('.js--main-text');
+    button.addEventListener('click', () => {
+        text.style.color = text.style.color === 'blue' ? 'black' : 'blue';
+    });
+</script>
+</body>
+</html>

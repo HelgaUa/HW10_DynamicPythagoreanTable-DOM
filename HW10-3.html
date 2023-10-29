@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random image</title>
+</head>
+<body>
+<img class = js--randomImg src = ''>
+<script>
+    const randomImage = Math.floor(Math.random()* 10) + 1;
+    const randomPath = `images/${randomImage}.jpg`;
+    console.log(randomImage);
+    const selectedImg = document.querySelector('.js--randomImg');
+    selectedImg.src = randomPath;
+</script>
+</body>
+</html>
